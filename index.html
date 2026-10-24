@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAIRO | Autonomous Intelligence</title>
+  <style>
+    :root {
+      --ink: #0b1020;
+      --muted: #70798a;
+      --gold: #c69a4b;
+      --cream: #f7f4ee;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--cream);
+      font-family: Inter, system-ui, sans-serif;
+    }
+
+    .wrap {
+      max-width: 1120px;
+      margin: auto;
+      padding: 0 28px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 0;
+      border-bottom: 1px solid #ddd8cf;
+    }
+
+    .brand {
+      font-weight: 800;
+      letter-spacing: .22em;
+    }
+
+    nav {
+      display: flex;
+      gap: 24px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 64px;
+      align-items: center;
+      min-height: 620px;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 700px;
+      margin: 20px 0;
+      font: 400 clamp(54px, 8vw, 92px)/.98 Georgia, serif;
+      letter-spacing: -.06em;
+    }
+
+    h1 em {
+      color: var(--gold);
+      font-style: normal;
+    }
+
+    .lead {
+      max-width: 520px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.75;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 26px;
+      padding: 15px 24px;
+      color: white;
+      background: var(--ink);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .visual {
+      min-height: 470px;
+      border-radius: 240px 240px 18px 18px;
+      background: linear-gradient(145deg, #1d263a, #b18a4b);
+      box-shadow: 0 30px 80px #0b102033;
+      display: grid;
+      place-items: center;
+      color: white;
+    }
+
+    .visual strong {
+      font: 400 82px Georgia, serif;
+      letter-spacing: -.08em;
+    }
+
+    .section {
+      padding: 76px 0;
+      border-top: 1px solid #ddd8cf;
+    }
+
+    h2 {
+      font: 400 46px Georgia, serif;
+      margin: 12px 0 34px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    article {
+      padding: 26px;
+      background: white;
+      border: 1px solid #e3ded5;
+    }
+
+    article h3 {
+      margin: 48px 0 10px;
+      font: 400 27px Georgia, serif;
+    }
+
+    article p,
+    footer {
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 30px 0;
+      font-size: 13px;
+    }
+
+    @media (max-width:760px) {
+      nav {
+        display: none;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 58px 0;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      footer {
+        display: block;
+      }
+
+      footer>* {
+        margin: 12px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">KAIRO</div>
+      <nav><a href="#systems">Systems</a><a href="#about">About</a><a href="#contact">Contact</a></nav><span
+        class="eyebrow">Operational</span>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <div class="eyebrow">Enterprise autonomous intelligence</div>
+          <h1>Clarity for the <em>complex.</em></h1>
+          <p class="lead">KAIRO orchestrates ambitious operations with precision, translating strategy into resilient,
+            measurable execution across every layer of your organization.</p><a class="button" href="#systems">Explore
+            KAIRO</a>
+        </div>
+        <div class="visual"><strong>K</strong></div>
+      </section>
+      <section class="section" id="systems">
+        <div class="eyebrow">Built for the decisive</div>
+        <h2>Intelligence with structure.</h2>
+        <div class="grid">
+          <article>
+            <div class="eyebrow">01 / 03</div>
+            <h3>Command</h3>
+            <p>Turn high-level intent into clear, executable systems of work.</p>
+          </article>
+          <article>
+            <div class="eyebrow">02 / 03</div>
+            <h3>Orchestrate</h3>
+            <p>Coordinate agents, tools, and people through one intelligent control plane.</p>
+          </article>
+          <article>
+            <div class="eyebrow">03 / 03</div>
+            <h3>Advance</h3>
+            <p>Learn from every outcome and continuously improve operational performance.</p>
+          </article>
+        </div>
+      </section>
+      <section class="section" id="about">
+        <div class="eyebrow">Engineered by Vann Sengmey</div>
+        <h2>Make complexity your advantage.</h2>
+        <p class="lead">KAIRO gives modern enterprises the architecture to move with intention and execute without
+          compromise.</p>
+      </section>
+    </main>
+    <footer id="contact"><strong>KAIRO</strong><span>Autonomous intelligence for consequential work.</span><span>© 2026
+        KAIRO Systems</span></footer>
+  </div>
+</body>
+
+</html>
